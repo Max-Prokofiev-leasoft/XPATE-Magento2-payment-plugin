@@ -30,10 +30,10 @@ The ideal online payment page for your webshop:
 
 ## Version number                 
  
-* Latest version VERSION_HERE
+* Latest version 1.0.0
  
 ## Requirements:       
-- PHP v7.0 to v8.1
+- PHP v8.1+
 - Magento v2.2.x to v2.4.4
                               
 ## Supported methods ##
