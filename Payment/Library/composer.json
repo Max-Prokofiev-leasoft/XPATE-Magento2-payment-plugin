@@ -1,0 +1,13 @@
+{
+    "require": {
+        "gingerpayments/ginger-php": ">=2.1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.3.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "GingerPay\\Payment\\": ""
+        }
+    }
+}
