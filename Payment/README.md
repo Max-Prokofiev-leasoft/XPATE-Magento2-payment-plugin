@@ -65,7 +65,7 @@ php bin/magento module:enable GingerPay_Payment
 ```
 If you install version 1.0.5 and older run:
 ```
-php bin/magento module:enable XPATEPay_Payment
+php bin/magento module:enable GingerPay_Payment
 ```
 5.  If Magento® is running in production mode you also need to redeploy the static content:
 ```
