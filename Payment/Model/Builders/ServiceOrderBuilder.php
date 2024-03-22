@@ -77,8 +77,7 @@ class ServiceOrderBuilder
      */
     public function cancel(OrderInterface $order): bool
     {
-        if ($order->getId() && $order->getState() != Order::STATE_CANCELED)
-        {
+        if ($order->getId() && $order->getState() != Order::STATE_CANCELED) {
             $comment = __("The order was canceled");
             $this->configRepository->addTolog('info', $order->getIncrementId() . ' ' . $comment);
             $order->registerCancellation($comment)->save();
@@ -198,7 +197,17 @@ class ServiceOrderBuilder
 
     public function getTransactions($platformCode, $issuerId = null, $verifiedTermsOfService = null)
     {
-        return ComponentRegistry::get(GetTransactionStrategy::class)->getTransactions(platformCode: $platformCode, issuerId: $issuerId, verifiedTermsOfService: $verifiedTermsOfService);
+        return [
+            array_filter([
+                "payment_method" => $platformCode,
+                "payment_method_details" => array_filter(
+                    [
+                        "issuer_id" => $issuerId,
+                        "verified_terms_of_service" => $verifiedTermsOfService
+                    ]
+                )
+            ])
+        ];
     }
 
     /**
@@ -337,7 +346,7 @@ class ServiceOrderBuilder
      * @throws InputException
      * @throws NoSuchEntityException
      */
-    public function updateStatus(OrderInterface $order, string $status) : OrderInterface
+    public function updateStatus(OrderInterface $order, string $status): OrderInterface
     {
         if ($order->getStatus() !== $status) {
             $msg = __('Status updated from %1 to %2', $order->getStatus(), $status);

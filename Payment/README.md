@@ -3,7 +3,7 @@
 ## About
 This is the official XPATE Online plugin.
 
-XPATE helps entrepreneurs with the best, smartest and most efficient payment systxpate. Both 
+XPATE helps entrepreneurs with the best, smartest and most efficient payment systems. Both 
 in your physical store and online in your webshop. With a wide range of payment methods 
 you can serve every customer.
 
@@ -30,28 +30,16 @@ The ideal online payment page for your webshop:
 
 ## Version number                 
  
-* Latest version VERSION_HERE
+* Latest version 1.0.0
  
 ## Requirements:       
-- PHP v7.0 to v8.1
+- PHP v8.1+
 - Magento v2.2.x to v2.4.4
                               
 ## Supported methods ##
-* Afterpay
-* Amex
 * Apple Pay
-* Bancontact
-* Banktransfer
 * Creditcard
-* iDEAL
-* Klarna Pay Later
-* Klarna Pay Now
-* Klarna Direkt Debit
 * Google-pay
-* Sofort
-* Payconiq
-* Paypal
-* Tikkie
 
 ## Installation using Composer ##
 Magento® 2 uses the Composer to manage the module package and the library. Composer is a dependency manager for PHP. Composer declares the libraries your project depends on and it will manage (install/update) them for you.

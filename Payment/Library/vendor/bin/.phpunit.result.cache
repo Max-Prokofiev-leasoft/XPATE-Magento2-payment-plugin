@@ -1,1 +1,1 @@
-{"version":1,"defects":[],"times":{"GingerPay\\Payment\\Tests\\AfterMergeTest::testIsFilesExist":0.001}}
+{"version":1,"defects":[],"times":{"GingerPay\\Payment\\Tests\\AfterMergeTest::testIsFilesExist":0.001,"GingerPay\\Payment\\Tests\\CreateOrderTest::testGetTransactions":0.001,"GingerPay\\Payment\\Tests\\CreateOrderTest::testGetVersion":0,"GingerPay\\Payment\\Tests\\CreateOrderTest::testGetUserAgent":0,"GingerPay\\Payment\\Tests\\CreateOrderTest::testGetClientLines":0,"GingerPay\\Payment\\Tests\\CreateOrderTest::testOrderCreation":0}}

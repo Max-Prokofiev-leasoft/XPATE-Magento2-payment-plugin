@@ -8,7 +8,7 @@
     <default>
         <payment>
             <ginger_general>
-                <version>VERSION_HERE</version>
+                <version>1.0.0</version>
                 <active>0</active>
                 <enabled>0</enabled>
                 <type>test</type>

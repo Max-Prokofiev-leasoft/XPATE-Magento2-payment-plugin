@@ -2,8 +2,8 @@
     "name": "xpatepay/xpate-online-magento-2",
     "description": "XPATE Pay for Magento 2",
     "type": "magento2-module",
-    "version": "VERSION_HERE",
-     "require": {       
+    "version": "1.0.0",
+     "require": {
         "gingerpayments/ginger-php": ">=2.1.0"
     },
     "license": [
