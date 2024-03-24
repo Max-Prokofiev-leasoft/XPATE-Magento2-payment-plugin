@@ -25,8 +25,6 @@ The ideal online payment page for your webshop:
 
 ·         One clear dashboard for all your payment, revenue and administrative functions 
 
-·         Available in 4 languages: English, French, Dutch, and German. More languages will be added. 
-
 
 ## Version number                 
  
