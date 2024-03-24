@@ -23,10 +23,7 @@ The ideal online payment page for your webshop:
 
 ·         Download your reports in the formats CAMT.053, MT940, MT940S & COD 
 
-·         One clear dashboard for all your payment, revenue and administrative functions 
-
-·         Available in 4 languages: English, French, Dutch, and German. More languages will be added. 
-
+·         One clear dashboard for all your payment, revenue and administrative functions
 
 ## Version number                 
  
@@ -40,47 +37,6 @@ The ideal online payment page for your webshop:
 * Apple Pay
 * Creditcard
 * Google-pay
-
-## Installation using Composer ##
-Magento® 2 uses the Composer to manage the module package and the library. Composer is a dependency manager for PHP. Composer declares the libraries your project depends on and it will manage (install/update) them for you.
-
-Check if your server has composer installed by running the following command:
-```
-composer –v
-``` 
-If your server doesn’t have composer installed, you can easily install it by using this manual: https://getcomposer.org/doc/00-intro.md
-
-Step-by-step to install the Magento® 2 extension through Composer:
-
-1.	Connect to your server running Magento® 2 using SSH or another method (make sure you have access to the command line).
-2.	Locate your Magento® 2 project root.
-3.	Install the Magento® 2 extension through composer and wait till it's completed:
-```
-composer require xpatepay/xpate-online-magento-2
-``` 
-4.	After that run the Magento® upgrade and clean the caches:
-```
-php bin/magento setup:upgrade
-php bin/magento module:enable GingerPay_Payment
-```
-If you install version 1.0.5 and older run:
-```
-php bin/magento module:enable GingerPay_Payment
-```
-5.  If Magento® is running in production mode you also need to redeploy the static content:
-```
-php bin/magento setup:static-content:deploy
-```
-6.  After the installation: Go to your Magento® admin portal and open ‘Stores’ > ‘Configuration’ > ‘Payment Methods’ > ‘XPATEPay’.
-
-
-## Additional ways to install ##
-
-### Manual instalation ###
-
-1. Go to app/code folder 
-2. Unzip xpate-online.zip file wich attached to [release](https://github.com/xpatepay/xpate-online-magento-2/releases) 
-3. Continue installation from step 4 in "Installation using Composer"
 
 
 
