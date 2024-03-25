@@ -3,7 +3,7 @@
 ## About
 This is the official XPATE Online plugin.
 
-XPATE helps entrepreneurs with the best, smartest and most efficient payment systxpate. Both 
+XPATE helps entrepreneurs with the best, smartest and most efficient payment systems. Both 
 in your physical store and online in your webshop. With a wide range of payment methods 
 you can serve every customer.
 
@@ -23,8 +23,7 @@ The ideal online payment page for your webshop:
 
 ·         Download your reports in the formats CAMT.053, MT940, MT940S & COD 
 
-·         One clear dashboard for all your payment, revenue and administrative functions 
-
+·         One clear dashboard for all your payment, revenue and administrative functions
 
 ## Version number                 
  
@@ -38,3 +37,6 @@ The ideal online payment page for your webshop:
 * Apple Pay
 * Creditcard
 * Google-pay
+
+
+
