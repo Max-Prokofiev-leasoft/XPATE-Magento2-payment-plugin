@@ -8,8 +8,8 @@ declare(strict_types=1);
 namespace GingerPay\Payment\Model;
 
 use GingerPay\Payment\Api\Config\RepositoryInterface as ConfigRepository;
-use GingerPay\Payment\Model\Builders\LibraryConfigProvider;
 use GingerPay\Payment\Model\AbstractPayment as PaymentLibraryModel;
+use GingerPay\Payment\Model\Builders\LibraryConfigProvider;
 use Magento\Checkout\Model\ConfigProviderInterface;
 use Magento\Framework\Escaper;
 use Magento\Payment\Helper\Data as PaymentHelper;
@@ -24,21 +24,9 @@ class PaymentConfigProvider extends LibraryConfigProvider
      * @var array
      */
     protected $methodCodes = [
-        Methods\Bancontact::METHOD_CODE,
-        Methods\Banktransfer::METHOD_CODE,
         Methods\Creditcard::METHOD_CODE,
         Methods\ApplePay::METHOD_CODE,
-        Methods\Ideal::METHOD_CODE,
-        Methods\KlarnaPayNow::METHOD_CODE,
-        Methods\KlarnaPayLater::METHOD_CODE,
-        Methods\Paypal::METHOD_CODE,
-        Methods\Payconiq::METHOD_CODE,
-        Methods\Afterpay::METHOD_CODE,
-        Methods\Amex::METHOD_CODE,
         Methods\Googlepay::METHOD_CODE,
-        Methods\GiroPay::METHOD_CODE,
-        Methods\MobilePay::METHOD_CODE,
-        Methods\Swish::METHOD_CODE,
     ];
 
     /**

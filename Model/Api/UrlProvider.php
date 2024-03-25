@@ -7,8 +7,8 @@ declare(strict_types=1);
 
 namespace GingerPay\Payment\Model\Api;
 
-use Magento\Framework\UrlInterface;
 use GingerPay\Payment\Model\Builders\LibraryConfigProvider;
+use Magento\Framework\UrlInterface;
 
 /**
  * UrlProvider API class

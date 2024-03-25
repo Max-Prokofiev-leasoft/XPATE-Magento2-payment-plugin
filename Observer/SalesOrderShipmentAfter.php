@@ -7,10 +7,10 @@ declare(strict_types=1);
 
 namespace GingerPay\Payment\Observer;
 
-use Magento\Framework\Event\ObserverInterface;
-use Magento\Framework\Event\Observer;
-use GingerPay\Payment\Model\Methods\KlarnaPayLater;
 use GingerPay\Payment\Model\Methods\Afterpay;
+use GingerPay\Payment\Model\Methods\KlarnaPayLater;
+use Magento\Framework\Event\Observer;
+use Magento\Framework\Event\ObserverInterface;
 use Magento\Sales\Api\Data\OrderInterface;
 
 /**

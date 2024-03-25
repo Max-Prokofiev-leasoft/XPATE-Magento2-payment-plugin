@@ -71,22 +71,6 @@ class LibraryConfigProvider extends ConfigRepositoryBuilder
             {
                 $config['payment'][$code]['instructions'] = $this->getInstructions($code);
 
-                if ($code == Ideal::METHOD_CODE && $client)
-                {
-                    $config['payment'][$code]['issuers'] = $this->getIssuers($client);
-                }
-                if ($code == Banktransfer::METHOD_CODE) {
-                    $config['payment'][$code]['mailingAddress'] = $this->getMailingAddress($code);
-                }
-                if ($code == KlarnaPayLater::METHOD_CODE) {
-                    $config['payment'][$code]['prefix'] = $this->getCustomerPrefixes();
-                }
-                if ($code == Afterpay::METHOD_CODE) {
-                    $config['payment'][$code]['prefix'] = $this->getCustomerPrefixes();
-                    $config['payment'][$code]['conditionsLinkNl'] = Afterpay::TERMS_NL_URL;
-                    $config['payment'][$code]['conditionsLinkBe'] = Afterpay::TERMS_BE_URL;
-                }
-
                 $config['payment'][$code]['isActive'] = in_array($code, $activeMethods);
 
                 $config['payment'][$code]['logo'] = $this->configRepository->getPaymentLogo($code);

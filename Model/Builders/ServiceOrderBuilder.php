@@ -2,17 +2,15 @@
 
 namespace GingerPay\Payment\Model\Builders;
 
-use GingerPay\Payment\Component\ComponentRegistry;
 use GingerPay\Payment\Model\Methods\Afterpay;
 use GingerPay\Payment\Model\Methods\KlarnaPayLater;
 use GingerPay\Payment\Model\Methods\KlarnaPayNow;
 use GingerPay\Payment\StrategyInterfaces\GetLinesStrategy;
-use GingerPay\Payment\StrategyInterfaces\GetTransactionStrategy;
 use Magento\Framework\Api\SearchCriteriaBuilder;
 use Magento\Framework\App\ProductMetadata;
 use Magento\Sales\Api\Data\OrderInterface;
-use Magento\Sales\Model\OrderRepository;
 use Magento\Sales\Api\Data\OrderStatusHistoryInterface;
+use Magento\Sales\Model\OrderRepository;
 
 class ServiceOrderBuilder
 {
@@ -126,14 +124,6 @@ class ServiceOrderBuilder
 
         if (isset($additionalData['dob'])) {
             $customerData['birthdate'] = date('Y-m-d', strtotime($additionalData['dob']));
-        }
-
-        if ($method == KlarnaPayLater::METHOD_CODE || $method == Afterpay::METHOD_CODE) {
-            $customerData['address'] = implode(' ', [trim($street), $postCode, trim($customer->getCity())]);
-        }
-
-        if ($method == KlarnaPayNow::METHOD_CODE) {
-            $customerData['address'] = implode(' ', [trim($customer->getCity()), trim($address)]);
         }
 
         $this->configRepository->addTolog('customer', $customerData);

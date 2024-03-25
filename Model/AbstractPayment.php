@@ -2,9 +2,9 @@
 
 namespace GingerPay\Payment\Model;
 
-use GingerPay\Payment\Model\PaymentLibrary;
 use GingerPay\Payment\Model\Methods\Afterpay;
 use GingerPay\Payment\Model\Methods\KlarnaPayLater;
+use Magento\Framework\DataObject;
 use Magento\Framework\Exception\LocalizedException;
 use Magento\Framework\Exception\NoSuchEntityException;
 use Magento\Payment\Model\InfoInterface;
@@ -12,7 +12,6 @@ use Magento\Quote\Api\Data\CartInterface;
 use Magento\Sales\Api\Data\OrderInterface;
 use Magento\Sales\Model\Order;
 use Magento\Sales\Model\Order\Creditmemo;
-use Magento\Framework\DataObject;
 
 
 class AbstractPayment extends PaymentLibrary

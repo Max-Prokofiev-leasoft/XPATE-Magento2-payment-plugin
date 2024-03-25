@@ -7,9 +7,9 @@ declare(strict_types=1);
 
 namespace GingerPay\Payment\Service\Order;
 
-use GingerPay\Payment\Model\Builders\ServiceOrderBuilder;
 use GingerPay\Payment\Api\Config\RepositoryInterface as ConfigRepository;
-use Magento\Framework\App\ProductMetadataInterface ;
+use GingerPay\Payment\Model\Builders\ServiceOrderBuilder;
+use Magento\Framework\App\ProductMetadataInterface;
 
 /**
  * ClientLines order class

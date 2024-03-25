@@ -7,9 +7,9 @@ declare(strict_types=1);
 
 namespace GingerPay\Payment\Model\Config;
 
-use GingerPay\Payment\Model\Builders\LibraryConfigProvider;
 use GingerPay\Payment\Logger\DebugLogger;
 use GingerPay\Payment\Logger\ErrorLogger;
+use GingerPay\Payment\Model\Builders\LibraryConfigProvider;
 use Magento\Framework\App\Config\ScopeConfigInterface;
 use Magento\Framework\HTTP\PhpEnvironment\RemoteAddress;
 use Magento\Framework\Module\ModuleListInterface;

@@ -7,11 +7,9 @@ declare(strict_types=1);
 
 namespace GingerPay\Payment\Service\Order;
 
-use GingerPay\Payment\Model\Builders\ServiceOrderBuilder;
 use GingerPay\Payment\Api\Config\RepositoryInterface as ConfigRepository;
-use GingerPay\Payment\Model\Methods\Afterpay;
+use GingerPay\Payment\Model\Builders\ServiceOrderBuilder;
 use GingerPay\Payment\Model\Methods\Klarna;
-use GingerPay\Payment\Model\Methods\KlarnaPayNow;
 use Magento\Framework\HTTP\Header;
 use Magento\Framework\Locale\Resolver;
 use Magento\Sales\Api\Data\OrderInterface;

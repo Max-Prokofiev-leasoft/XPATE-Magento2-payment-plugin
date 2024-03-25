@@ -9,8 +9,8 @@ namespace GingerPay\Payment\Model\Methods;
 
 use GingerPay\Payment\Model\AbstractPayment;
 use Magento\Framework\DataObject;
-use Magento\Sales\Api\Data\OrderInterface;
 use Magento\Framework\Exception\LocalizedException;
+use Magento\Sales\Api\Data\OrderInterface;
 
 /**
  * Ideal method class`

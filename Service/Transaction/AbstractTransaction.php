@@ -7,11 +7,10 @@ declare(strict_types=1);
 
 namespace GingerPay\Payment\Service\Transaction;
 
-use GingerPay\Payment\Model\Builders\TransactionBuilder;
 use GingerPay\Payment\Api\Config\RepositoryInterface as ConfigRepository;
-use GingerPay\Payment\Model\Api\UrlProvider;
 use GingerPay\Payment\Controller\Invoice;
-use GingerPay\Payment\Model\Methods\Banktransfer;
+use GingerPay\Payment\Model\Api\UrlProvider;
+use GingerPay\Payment\Model\Builders\TransactionBuilder;
 use GingerPay\Payment\Service\Order\Cancel as CancelOrder;
 use GingerPay\Payment\Service\Order\SendInvoiceEmail;
 use GingerPay\Payment\Service\Order\SendOrderEmail;

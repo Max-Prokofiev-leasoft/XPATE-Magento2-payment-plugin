@@ -8,8 +8,8 @@ declare(strict_types=1);
 namespace GingerPay\Payment\Model\Methods;
 
 use GingerPay\Payment\Model\AbstractPayment;
-use Magento\Sales\Api\Data\OrderInterface;
 use Magento\Framework\Exception\LocalizedException;
+use Magento\Sales\Api\Data\OrderInterface;
 
 /**
  * Creditcard method class

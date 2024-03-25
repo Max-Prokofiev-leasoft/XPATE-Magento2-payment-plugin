@@ -7,9 +7,6 @@ declare(strict_types=1);
 
 namespace GingerPay\Payment\Service\Transaction;
 
-use GingerPay\Payment\Model\Methods\Afterpay;
-use GingerPay\Payment\Model\Methods\Banktransfer;
-use GingerPay\Payment\Model\Methods\KlarnaPayLater;
 use Magento\Framework\Exception\LocalizedException;
 use Magento\Sales\Api\Data\OrderInterface;
 use Magento\Sales\Model\Order\Payment;

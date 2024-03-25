@@ -7,7 +7,6 @@ declare(strict_types=1);
 
 namespace GingerPay\Payment\Service\Transaction\Process;
 
-use GingerPay\Payment\Model\Methods\Banktransfer;
 use GingerPay\Payment\Service\Transaction\AbstractTransaction;
 use Magento\Framework\Exception\LocalizedException;
 use Magento\Sales\Api\Data\OrderInterface;

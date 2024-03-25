@@ -8,10 +8,10 @@ declare(strict_types=1);
 namespace GingerPay\Payment\ViewModel\Checkout;
 
 use GingerPay\Payment\Api\Config\RepositoryInterface as ConfigRepository;
-use GingerPay\Payment\Model\PaymentLibrary as PaymentLibraryModel;
 use GingerPay\Payment\Model\Methods\Banktransfer;
 use GingerPay\Payment\Model\Methods\Ideal;
 use GingerPay\Payment\Model\Methods\KlarnaPayNow;
+use GingerPay\Payment\Model\PaymentLibrary as PaymentLibraryModel;
 use Magento\Checkout\Model\Session;
 use Magento\Framework\View\Element\Block\ArgumentInterface;
 use Magento\Sales\Model\Order\Payment;
