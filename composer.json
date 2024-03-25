@@ -2,7 +2,7 @@
     "name": "max-leasoft/xpate-online-magento-2",
     "description": "XPATE for Magento 2",
     "type": "magento2-module",
-    "version": "1.0",
+    "version": "1.5",
      "require": {       
         "gingerpayments/ginger-php": ">=2.1.0"
     },
