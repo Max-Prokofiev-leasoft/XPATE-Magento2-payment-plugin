@@ -230,7 +230,7 @@ class TransactionBuilder
 
         if ($transactionId && !$this->configRepository->getError($transaction)) {
             $method = $this->getMethodFromOrder($order);
-            $message = __('EMS Order ID: %1', $transactionId);
+            $message = __('XPATE Order ID: %1', $transactionId);
             $status = $this->configRepository->getStatusPending($method, (int)$order->getStoreId());
             $order->addStatusToHistory($status, $message, false);
             $order->setGingerpayTransactionId($transactionId);
