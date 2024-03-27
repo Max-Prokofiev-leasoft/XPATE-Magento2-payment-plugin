@@ -1,6 +1,6 @@
 {
-    "name": "max-leasoft/xpate-online-magento-2",
-    "description": "XPATE for Magento 2",
+    "name": "xpate-payments/xpate-online-magento-2",
+    "description": "Xpate payment plugin for Magento 2",
     "type": "magento2-module",
     "version": "1.0.0",
      "require": {       

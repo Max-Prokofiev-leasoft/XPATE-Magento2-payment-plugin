@@ -7,14 +7,15 @@ declare(strict_types=1);
 
 namespace GingerPay\Payment\Controller\Checkout;
 
+use GingerPay\Payment\Api\Config\RepositoryInterface as ConfigRepository;
+use GingerPay\Payment\Model\Builders\ControllerCheckoutActionBuilder as ActionRedefiner;
+use Magento\Checkout\Model\Session;
 use Magento\Framework\App\Action\Action;
 use Magento\Framework\App\Action\Context;
-use Magento\Checkout\Model\Session;
 use Magento\Framework\App\ResponseInterface;
 use Magento\Framework\Controller\ResultInterface;
 use Magento\Payment\Helper\Data as PaymentHelper;
-use GingerPay\Payment\Api\Config\RepositoryInterface as ConfigRepository;
-use GingerPay\Payment\Model\Builders\ControllerCheckoutActionBuilder as ActionRedefiner;
+
 /**
  * Checkout redirect class
  */

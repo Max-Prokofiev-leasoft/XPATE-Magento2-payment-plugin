@@ -12,8 +12,8 @@ use Magento\Framework\Controller\ResultFactory;
 use Magento\Framework\Controller\ResultInterface;
 use Magento\Framework\Filesystem\Driver\File as FilesystemDriver;
 use Magento\Framework\Serialize\Serializer\Json;
-use Magento\Payment\Helper\Data as PaymentHelper;
 use Magento\Framework\Webapi\Rest\Request;
+use Magento\Payment\Helper\Data as PaymentHelper;
 
 class ControllerCheckoutActionBuilder extends Action
 {
@@ -68,7 +68,7 @@ class ControllerCheckoutActionBuilder extends Action
 
         if ($orderId === null) {
             $this->configRepository->addTolog('error', __('Invalid return, missing order id.'));
-            $this->messageManager->addNoticeMessage(__('Invalid return from EMS.'));
+            $this->messageManager->addNoticeMessage(__('Invalid return from Xpate'));
             return $this->_redirect('checkout/cart');
         }
 

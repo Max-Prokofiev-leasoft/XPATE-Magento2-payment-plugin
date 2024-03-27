@@ -3,8 +3,10 @@
 namespace GingerPay\Payment\Controller\Checkout;
 
 use GingerPay\Payment\Api\Config\RepositoryInterface as ConfigRepository;
+use GingerPay\Payment\Model\Builders\ControllerCheckoutActionBuilder as ActionRedefiner;
 use GingerPay\Payment\Model\PaymentLibrary as PaymentLibraryModer;
 use Magento\Checkout\Model\Session;
+use Magento\Framework\App\Action\Action;
 use Magento\Framework\App\Action\Context;
 use Magento\Framework\App\ResponseInterface;
 use Magento\Framework\Controller\ResultFactory;
@@ -13,9 +15,8 @@ use Magento\Framework\Filesystem\Driver\File as FilesystemDriver;
 use Magento\Framework\Serialize\Serializer\Json;
 use Magento\Payment\Helper\Data as PaymentHelper;
 use Magento\Store\Model\App\Emulation;
-use Magento\Framework\App\Action\Action;
 use Magento\Store\Model\Store as StoreModel;
-use GingerPay\Payment\Model\Builders\ControllerCheckoutActionBuilder as ActionRedefiner;
+
 /**
  * Webhook controller class
  */
