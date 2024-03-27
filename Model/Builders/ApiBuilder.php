@@ -39,7 +39,7 @@ class ApiBuilder
      * Endpoint
      */
 //    TODO Change endpoint
-    const ENDPOINT = 'https://api.dev.gingerpayments.com/';
+    const ENDPOINT = 'https://api.gateway.xpate.com/';
 
     /**
      * Ginger
